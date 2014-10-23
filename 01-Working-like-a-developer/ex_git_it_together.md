@@ -7,13 +7,13 @@
 
 | | |
 | ------------- |:-------------|
-| __Topics__ | bash commands, terminal, git, GitHub| 
-| __Description__| Practice using Git and creating pull request.|    
- 
+| __Topics__ | bash commands, terminal, git, GitHub|
+| __Description__| Practice using Git and creating pull request.|
+
 
 
 ####Task Instructions
-
+- Fork this repository and clone it
 - 	Create a directory with your github username
 -	Add a .txt file named blog in that directory and type your name and the URL to your blog
 -	Commit your changes
