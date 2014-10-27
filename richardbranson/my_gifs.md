@@ -1,13 +1,11 @@
-![GeneralAssemb.ly](https://raw.githubusercontent.com/richardbranson/exercises/master/richardbranson/gifs/minion-potato.gif)
-![GeneralAssemb.ly](https://raw.githubusercontent.com/richardbranson/exercises/master/richardbranson/gifs/richardbranson_ice_bucket.gif)
+![Singing Minions](https://raw.githubusercontent.com/richardbranson/exercises/master/richardbranson/gifs/minion-potato.gif)
+![Richard Branson Does Ice Bucket](https://raw.githubusercontent.com/richardbranson/exercises/master/richardbranson/gifs/richardbranson_ice_bucket.gif)
 
 ## GIF GIT upload Homework
 
-
 ###Time: 15 min
 
-| | |
-| ------------- |:-------------|
+--- | ---
 | __Topics__ | bash commands, terminal, git, GitHub| 
 | __Description__| Practice using Git and creating pull request.|    
  
