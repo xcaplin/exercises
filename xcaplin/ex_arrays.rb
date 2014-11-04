@@ -48,18 +48,18 @@ categories = []
 assert_equal categories, []
 
 # Create an empty array named categories using Array's #new method
-categories = ___
+categories = Array.new
 assert_equal categories, []
 
 # Add 3 stories to the categories array. Each time using a different method.
-categories.___("Music")
-categories.___("Weather")
-categories.___("Florida")
+categories.map("Music")
+categories.push("Weather")
+categories.collect("Florida")
 assert_equal ["Florida", "Music", "Weather"], categories.sort
 
 # Ensure only unique categories get stored
 categories << "Florida"
-categories.___!
+categories.uniq!
 assert_equal ["Florida", "Music", "Weather"], categories.sort
 
 # Write a conditional that adds "Family" to the category list if it includes both Animals, and Shopping
