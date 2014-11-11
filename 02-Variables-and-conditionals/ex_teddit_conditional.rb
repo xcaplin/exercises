@@ -6,6 +6,8 @@
 
 def get_input
   #Get input from the user.
+  story = gets
+  category = gets
 end
 
 def calculate_upvotes(story, category)
