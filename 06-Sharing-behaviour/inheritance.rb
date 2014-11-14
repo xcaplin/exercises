@@ -1,29 +1,19 @@
+require './employee'
+require './manager'
+require './marekteer'
 
-#Sharing Behavior and Variables
-#TIME: 20 min
+manager = Manager.new("Bob", "Builder", "MBA", "bob@acme.org")
 
-# Create an employee class.
-class Employee
+marketer = Marketer.new("Seth", "Godin", "@seth")
 
+marketer2 = Marketer.new("Jo" , "Johannson")
+puts "Name: ", manager.full_name
+puts "Contact: ", manager.contact
 
-end
-
-# A manager is contactable by email,
-# and wants their title as part of their name display
-class Manager < Employee
-
-
-end
-
-# A marketer can be contacted via twitter
-# but is fine with the default name display
-class Marketer < Employee
+puts "Name: ", marketer.full_name
+puts "Contact:", marketer.contact
 
 
-end
+puts "Name: ", marketer2.full_name
+puts "Contact:", marketer2.contact
 
-
-
-
-# BONUS: Demonstrate how to make this code less error-prone by using named arguments
-#        for the initializers
