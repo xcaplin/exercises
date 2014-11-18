@@ -45,11 +45,9 @@ def compile_collection(parsed_reddit_json)
 		elsif story_hash[:category].include? 'candy'
 			story_hash[:upvotes] = story_hash[:upvotes] +10
 		end
-		
-		 stories << story_hash
+		stories << story_hash
 	end
-
-stories
+	stories
 end
 
 

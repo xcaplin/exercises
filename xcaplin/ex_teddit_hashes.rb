@@ -39,6 +39,8 @@ end
 
 def initiate_collection(stories_collection)
 	stories_collection = []
+end
+
 
 def collect_story(stories_collection, story_hash)
 	stories_collection = []
