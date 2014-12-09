@@ -1,0 +1,59 @@
+require 'json'
+require 'rest_client'
+require './midterm_class_Region.rb'
+
+class RegionalNewsPrinter
+	attr_accessor 	:country, :url, :raw_headlines,
+					:parsed_headlines, :line_hash
+
+	def initialize (country)
+		@country = country
+		@url = url
+	end
+
+	def welcome
+		puts "Welcome to the Regional News Printer."
+		puts "Gathering headlines..."
+	end
+
+	def new_url
+		url = "http://content.guardianapis.com/search?q=#{country}&api-key=test"
+		RestClient.get(news_url).to_s
+	end
+
+	def parse_headlines
+		JSON.parse(news_url)
+	end
+
+	def compile_headlines
+		lines = []
+		parsed_headlines['result']['webTitle'][0..5].each do |line|
+			line_hash={}
+			line_hash[:title] = line['result']['webTitle'].strip
+			lines << line_hash
+		end
+		lines
+	end
+
+	def puts_headlines
+		puts "Here are the top 5 headlines for #{country}:"
+		lines.each do
+			puts "#{line_hash[:title]}"
+		end
+	end
+end
+
+news = RegionalNewsPrinter.new ("wales", url)
+
+news.welcome
+#news.choose_country
+news.get_headlines
+news.parse_headlines
+news.compile_headlines
+news.puts_headlines
+
+
+
+
+
+
